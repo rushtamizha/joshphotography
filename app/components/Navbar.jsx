@@ -32,7 +32,7 @@ export default function Navbar() {
     <motion.header
       className={`fixed left-0 right-0 z-50 mx-auto w-full transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${
         isScrolled
-          ? "top-5 max-w-7xl px-4 lg:px-6"
+          ? "top-5 max-w-7xl px-6 lg:px-6"
           : "top-0 max-w-7xl px-6 md:px-10 lg:px-12 py-8"
       }`}
       initial={{ y: -100, opacity: 0 }}
@@ -94,9 +94,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           {/* Elite WhatsApp CTA */}
           <Link
-            href="https://wa.me/918050412444"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/contact"
             className="hidden lg:flex items-center space-x-2 bg-gradient-to-r from-purple-950/40 to-purple-900/40 border border-purple-500/20 text-[#FAF9F6] px-6 py-2.5 rounded-full hover:border-[#D4AF37]/50 transition-all duration-500 font-sans text-[14px] tracking-wide capitalize group shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]"
           >
             <FaWhatsapp className="text-[17px] text-[#D4AF37]" />
@@ -183,9 +181,8 @@ export default function Navbar() {
                   className="mt-6 pt-4 border-t border-purple-500/10"
                 >
                   <Link
-                   href="https://wa.me/918050412444"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
                     className="flex items-center justify-center space-x-3 w-full bg-gradient-to-r from-purple-600 via-[#7C3AED] to-purple-700 text-[#FAF9F6] py-3.5 rounded-xl transition-all duration-300 font-sans text-[15px] tracking-wide capitalize font-medium shadow-[0_8px_30px_rgba(124,58,237,0.3)] border border-purple-400/20 active:scale-[0.99]"
                   >
                     <FaWhatsapp className="text-[19px] text-[#D4AF37]" />

@@ -39,6 +39,30 @@ const heroImages = [
   {
     src: "/Hero/hero6.jpg",
     alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero7.JPG",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero8.JPG",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero9.jpg",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero10.jpg",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero11.jpg",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero12.jpg",
+    alt: "Luxury editorial couple portrait",
   }
 ];
 

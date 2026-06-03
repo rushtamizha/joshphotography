@@ -116,7 +116,7 @@ export default function Footer() {
             <ul className="flex flex-col space-y-3.5 font-sans text-[14px]  text-[#FAF9F6]">
               <li className="flex items-center space-x-3">
                 <FiMail size={14} className="text-purple-400 shrink-0" />
-                <a href="mailto:inquire@joshstudios.com" className="hover:text-[#D4AF37] transition-colors duration-300">inquire@joshstudios.com</a>
+                <a href="mailto:joshphotography.v@gmail.com" className="hover:text-[#D4AF37] transition-colors duration-300">joshphotography.v@gmail.com</a>
               </li>
               <li className="flex items-center space-x-3">
                 <FiPhone size={14} className="text-[#D4AF37] shrink-0" />

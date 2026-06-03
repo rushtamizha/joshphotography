@@ -13,47 +13,53 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const stories = [
-  {
-    id: 1,
-    title: "The Royal Union at Udaipur",
-    category: "Hindu Wedding",
-    src: "/Hero/hero1.jpg",
-    alt: "Grand regal Indian wedding portrait"
+{
+    src: "/Hero/hero1.jpg", 
+    alt: "Royal cultural wedding entrance and grand celebrations",
   },
   {
-    id: 2,
-    title: "Grace & Devotion",
-    category: "Christian Ceremony",
-    src: "/Hero/hero2.jpg",
-    alt: "Bright elegant veil ceremony"
+    src: "/Hero/hero2.jpg", 
+    alt: "Bright emotional candid couple moment",
   },
   {
-    id: 3,
-    title: "A Symphony of Sacred Rituals",
-    category: "Traditional Nikkah",
-    src: "/Hero/hero3.jpg",
-    alt: "Intricate traditional wedding rituals"
+    src: "/Hero/hero3.jpg", 
+    alt: "Vibrant traditional wedding sacred rituals",
   },
   {
-    id: 4,
-    title: "The Golden Hour Waltz",
-    category: "Reception Story",
     src: "/Hero/hero4.jpg",
-    alt: "Bright laughing couple during golden hour"
+    alt: "Luxury editorial couple portrait",
   },
   {
-    id: 5,
-    title: "Whispers of the Heritage Legacy",
-    category: "Intimate Muhurtham",
     src: "/Hero/hero5.jpg",
-    alt: "Vibrant ethnic bridal details"
+    alt: "Luxury editorial couple portrait",
   },
   {
-    id: 6,
-    title: "Whispers of the Heritage Legacy",
-    category: "Intimate Muhurtham",
     src: "/Hero/hero6.jpg",
-    alt: "Vibrant ethnic bridal details"
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero7.JPG",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero8.JPG",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero9.jpg",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero10.jpg",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero11.jpg",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/Hero/hero12.jpg",
+    alt: "Luxury editorial couple portrait",
   }
 ];
 

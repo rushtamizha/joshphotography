@@ -14,7 +14,7 @@ export default function PortfolioPage() {
   // Filtering Logic
   const filteredStories = activeCategory === "All Stories"
     ? portfolioData
-    : portfolioData.filter(story => story.category === activeCategory);
+    : portfolioData 
 
   return (
     <main className="min-h-screen bg-[#07030C] text-[#FAF9F6] pt-32 pb-24 relative overflow-x-hidden">
@@ -60,7 +60,7 @@ export default function PortfolioPage() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-wrap justify-center items-center gap-2 md:gap-3 mb-16 max-w-4xl mx-auto"
+          className="flex flex-wrap justify-center items-center gap-2 md:gap-3 mb-16 max-w-4xl mx-auto hidden"
         >
           {categories.map((category) => (
             <button
@@ -126,7 +126,7 @@ export default function PortfolioPage() {
                   {/* Inline metadata layered within the canvas bounds */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-20 space-y-2.5">
                     <div className="flex hidden flex-wrap gap-1.5">
-                      {story.tags.map((tag, i) => (
+                      {story.tags?.map((tag, i) => (
                         <span key={i} className="text-[10px] tracking-wide text-[#D4AF37]/75 font-sans bg-[#D4AF37]/5 px-2 py-0.5 rounded border border-[#D4AF37]/10">
                           {tag}
                         </span>
