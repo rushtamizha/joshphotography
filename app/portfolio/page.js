@@ -38,10 +38,10 @@ export default function PortfolioPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-wide leading-tight"
+            className=" text-4xl  tracking-wide leading-tight"
           >
             Wedding Stories Told With <br />
-            <span className="text-[#D4AF37] font-light italic bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent">
+            <span className="text-[#D4AF37]   bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent">
               Artistic Integrity
             </span>
           </motion.h2>
@@ -49,7 +49,7 @@ export default function PortfolioPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="font-sans text-[#FAF9F6]/60 text-sm md:text-base max-w-xl mx-auto"
+            className="font-sans text-[#FAF9F6] text-sm md:text-base max-w-xl mx-auto"
           >
             Browse through some of our most beloved visual legacies documented across spectacular backdrops.
           </motion.p>
@@ -69,7 +69,7 @@ export default function PortfolioPage() {
               className={`relative px-6 py-2.5 rounded-full font-sans text-[13px] tracking-wide whitespace-nowrap transition-all duration-500 border focus:outline-none ${
                 activeCategory === category
                   ? "border-[#D4AF37] text-[#D4AF37] bg-purple-950/20"
-                  : "border-purple-500/10 text-[#FAF9F6]/60 hover:text-[#FAF9F6] hover:border-purple-500/30 bg-[#0B0712]/30"
+                  : "border-purple-500/10 text-[#FAF9F6] hover:text-[#FAF9F6] hover:border-purple-500/30 bg-[#0B0712]/30"
               }`}
             >
               {category}
@@ -114,7 +114,7 @@ export default function PortfolioPage() {
                   />
 
                   {/* Micro Floating Category Tag */}
-                  <div className="absolute top-4 left-4 z-20 bg-[#07030C]/60 backdrop-blur-md px-3 py-1.5 border border-white/5 rounded-md text-[10px] tracking-widest uppercase text-[#FAF9F6]/80">
+                  <div className="absolute hidden top-4 left-4 z-20 bg-[#07030C]/60 backdrop-blur-md px-3 py-1.5 border border-white/5 rounded-md text-[10px] tracking-widest uppercase text-[#FAF9F6]/80">
                     {story.category}
                   </div>
 
@@ -125,7 +125,7 @@ export default function PortfolioPage() {
 
                   {/* Inline metadata layered within the canvas bounds */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 z-20 space-y-2.5">
-                    <div className="flex flex-wrap gap-1.5">
+                    <div className="flex hidden flex-wrap gap-1.5">
                       {story.tags.map((tag, i) => (
                         <span key={i} className="text-[10px] tracking-wide text-[#D4AF37]/75 font-sans bg-[#D4AF37]/5 px-2 py-0.5 rounded border border-[#D4AF37]/10">
                           {tag}
@@ -133,11 +133,11 @@ export default function PortfolioPage() {
                       ))}
                     </div>
 
-                    <h3 className="font-serif text-2xl tracking-wide text-[#FAF9F6]">
+                    <h3 className=" text-2xl hidden tracking-wide text-[#FAF9F6]">
                       {story.couple}
                     </h3>
 
-                    <div className="flex items-center text-[13px] text-[#FAF9F6]/60 font-sans tracking-wide space-x-1.5">
+                    <div className="flex hidden items-center text-[13px] text-[#FAF9F6]/60 font-sans tracking-wide space-x-1.5">
                       <FiMapPin size={13} className="text-purple-400/70" />
                       <span className="truncate">{story.location}</span>
                     </div>

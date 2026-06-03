@@ -45,7 +45,7 @@ const testimonials = [
 
 export default function GoogleTestimonials() {
   return (
-    <section id="testimonials" className="relative bg-[#07040A] py-24 md:py-32 overflow-hidden border-b border-purple-500/5">
+    <section id="testimonials" className="relative bg-[#07040A] py-14 md:py-22 overflow-hidden border-b border-purple-500/5">
       
       {/* Ambient Atmospheric Lights */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-purple-600/5 rounded-full blur-[140px] pointer-events-none" />
@@ -84,13 +84,13 @@ export default function GoogleTestimonials() {
           <div className="max-w-2xl text-left">
             <div className="flex items-center space-x-2 bg-purple-950/40 border border-purple-500/10 rounded-full w-fit px-4 py-1.5 mb-4 backdrop-blur-md">
               <Sparkles size={13} className="text-[#D4AF37]" />
-              <span className="font-sans text-xs md:text-sm tracking-wide text-purple-300/80 capitalize">
+              <span className="font-sans text-xs md:text-sm tracking-wide text-purple-300 capitalize">
                 Verified Client Appreciations
               </span>
             </div>
-            <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#FAF9F6] tracking-wide leading-tight">
+            <h3 className=" text-3xl  text-[#FAF9F6] tracking-wide leading-tight">
               Words From The <br />
-              <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent font-light italic">
+              <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent  ">
                 Families We’ve Served
               </span>
             </h3>
@@ -170,7 +170,7 @@ export default function GoogleTestimonials() {
                     </div>
 
                     {/* Core Quote Body Copy */}
-                    <p className="font-sans text-[15px] md:text-[17px] text-[#FAF9F6]/80 font-light leading-relaxed tracking-wide mb-8">
+                    <p className="font-sans text-[15px] md:text-[17px] text-[#FAF9F6]   leading-relaxed tracking-wide mb-8">
                       “{item.quote}”
                     </p>
                   </div>
@@ -181,11 +181,11 @@ export default function GoogleTestimonials() {
                       <span className="font-sans text-[15px] font-medium text-[#FAF9F6] tracking-wide">
                         {item.author}
                       </span>
-                      <span className="font-sans text-xs text-[#D4AF37]/60 group-hover:text-[#D4AF37]/80 transition-colors duration-400 font-light tracking-wide capitalize">
+                      <span className="font-sans text-xs text-[#D4AF37]/60 group-hover:text-[#D4AF37]/80 transition-colors duration-400  tracking-wide capitalize">
                         {item.location}
                       </span>
                     </div>
-                    <span className="font-sans text-[11px] text-purple-300/30 uppercase tracking-widest font-light shrink-0">
+                    <span className="font-sans text-[11px] text-purple-300/30 uppercase tracking-widest  shrink-0">
                       {item.date}
                     </span>
                   </div>

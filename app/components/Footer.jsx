@@ -29,7 +29,7 @@ export default function Footer() {
       {/* ========================================== */}
       {/* 01. MASTER FINAL CTA SECTION               */}
       {/* ========================================== */}
-      <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-10 lg:px-12 pt-24 pb-20 border-b border-purple-500/10">
+      <div className="relative z-10 hidden max-w-7xl mx-auto px-5 md:px-10 lg:px-12 pt-24 pb-20 border-b border-purple-500/10">
         <div className="bg-[#0B0712]/40 backdrop-blur-md border border-purple-500/10 rounded-3xl p-8 md:p-16 text-center max-w-5xl mx-auto relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
           
           {/* Internal Micro Ambient Glow */}
@@ -43,14 +43,14 @@ export default function Footer() {
               </span>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FAF9F6] tracking-wide leading-tight">
+            <h2 className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#FAF9F6] tracking-wide leading-tight">
               Let’s Create Timeless <br />
-              <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent font-light italic">
+              <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent  ">
                 Memories Together
               </span>
             </h2>
 
-            <p className="font-sans text-sm md:text-[16px] text-[#FAF9F6]/60 font-light max-w-2xl leading-relaxed">
+            <p className="font-sans text-sm md:text-[16px] text-[#FAF9F6]/60  max-w-2xl leading-relaxed">
               Capturing high-profile cultural weddings with absolute elegance, structural reverence, deep emotion, and premium cinematic beauty since 2002.
             </p>
 
@@ -80,28 +80,28 @@ export default function Footer() {
           {/* Brand Presentation Block */}
           <div className="md:col-span-5 flex flex-col space-y-5 text-left">
             <div>
-              <h3 className="font-serif text-xl md:text-2xl text-[#FAF9F6] tracking-wide">
-                Josh Photography <span className="font-light italic text-[#D4AF37]">Studios</span>
+              <h3 className=" text-xl  text-[#FAF9F6] tracking-wide">
+                Josh Photography <span className="  text-[#D4AF37]">Studios</span>
               </h3>
               <p className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#D4AF37]/60 font-medium mt-1">
                 Luxury Cultural Wedding Photography & Films
               </p>
             </div>
-            <p className="font-sans text-sm text-[#FAF9F6]/50 font-light leading-relaxed max-w-sm">
+            <p className="font-sans text-sm text-[#FAF9F6]  leading-relaxed max-w-sm">
               Preserving high-profile weddings as timeless family legacies filled with genuine emotion, heritage tradition, and editorial elegance. Trusted by generations since 2002.
             </p>
           </div>
 
           {/* Quick Curated Navigation Directory */}
           <div className="md:col-span-3 flex flex-col space-y-4 text-left md:pl-8">
-            <h4 className="font-sans text-xs uppercase tracking-widest text-[#FAF9F6]/90 font-medium">
-              Navigation
+            <h4 className="font-sans text-xs uppercase tracking-widest text-[#FAF9F6] font-medium">
+              Company
             </h4>
-            <ul className="flex flex-col space-y-2.5 font-sans text-[14px] font-light text-[#FAF9F6]/60">
-              {["The Studio", "Wedding Stories", "Cinematic Films", "The Experience", "Investment"].map((link, idx) => (
-                <li key={idx}>
-                  <a href={`#${link.toLowerCase().replace(" ", "-")}`} className="hover:text-[#D4AF37] transition-colors duration-300">
-                    {link}
+            <ul className="flex flex-col space-y-2.5 font-sans text-[14px]  text-[#FAF9F6]">
+              {[{ name: "home" , link:"#"},{ name: "Our Legacy" , link:"about"},{ name: "Portfolio" , link:"portfolio"},{ name: "testimonials" , link:"#testimonials"} ].map((link, idx) => (
+                <li key={idx} >
+                  <a href={link.link} className="select-none hover:text-[#D4AF37] transition-colors duration-300 capitalize">
+                    {link.name}
                   </a>
                 </li>
               ))}
@@ -110,21 +110,21 @@ export default function Footer() {
 
           {/* Studio Contact Coordinates */}
           <div className="md:col-span-4 flex flex-col space-y-4 text-left">
-            <h4 className="font-sans text-xs uppercase tracking-widest text-[#FAF9F6]/90 font-medium">
+            <h4 className="font-sans text-xs uppercase tracking-widest text-[#FAF9F6] font-medium">
               Studio Office
             </h4>
-            <ul className="flex flex-col space-y-3.5 font-sans text-[14px] font-light text-[#FAF9F6]/60">
+            <ul className="flex flex-col space-y-3.5 font-sans text-[14px]  text-[#FAF9F6]">
               <li className="flex items-center space-x-3">
                 <FiMail size={14} className="text-purple-400 shrink-0" />
                 <a href="mailto:inquire@joshstudios.com" className="hover:text-[#D4AF37] transition-colors duration-300">inquire@joshstudios.com</a>
               </li>
               <li className="flex items-center space-x-3">
                 <FiPhone size={14} className="text-[#D4AF37] shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-[#D4AF37] transition-colors duration-300">+1 (234) 567-890</a>
+                <a href="tel:+918050412444" className="hover:text-[#D4AF37] transition-colors duration-300">+918050412444</a>
               </li>
               <li className="flex items-start space-x-3">
                 <FiMapPin size={14} className="text-purple-400 shrink-0 mt-0.5" />
-                <span className="leading-relaxed">Available for bespoke high-profile commissions worldwide.</span>
+                <span className="leading-relaxed">Andrahalli Main Rd, Herohalli, <br/> Sunkadakatte, Bengaluru,<br/> Karnataka, India.</span>
               </li>
             </ul>
           </div>
@@ -136,7 +136,7 @@ export default function Footer() {
         <div className="border-t border-purple-500/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-6 w-full">
           
           {/* Studio Rights & Copyright Row */}
-          <p className="font-sans text-xs text-[#FAF9F6]/30 font-light tracking-wide text-center sm:text-left">
+          <p className="font-sans text-xs text-[#FAF9F6]  tracking-wide text-center sm:text-left">
             © {currentYear} Josh Photography Studios. All Rights Preserved. Crafted with Heart & Authenticity.
           </p>
 
@@ -157,7 +157,7 @@ export default function Footer() {
             {/* Smooth Top Navigation Anchor Button */}
             <button 
               onClick={handleScrollToTop}
-              className="font-sans text-[11px] uppercase tracking-widest text-[#FAF9F6]/40 hover:text-[#FAF9F6] transition-colors duration-300 border border-white/5 bg-white/[0.01] px-3 py-1.5 rounded-md text-xs"
+              className="font-sans text-[11px] uppercase tracking-widest text-[#FAF9F6] hover:text-[#FAF9F6] transition-colors duration-300 border border-white/5 bg-white/[0.01] px-3 py-1.5 rounded-md text-xs"
             >
               Back To Top ↑
             </button>

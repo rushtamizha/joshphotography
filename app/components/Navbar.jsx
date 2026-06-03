@@ -67,9 +67,9 @@ export default function Navbar() {
               className="object-cover"
             />
           </div>
-          <h1 className="font-serif  text-xl md:text-2xl text-[#FAF9F6] tracking-wide transition-all duration-300">
-            Josh{" "}
-            <span className="text-[#D4AF37] font-light italic bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent">
+          <h1 className="  text-xl md:text-2xl text-[#FAF9F6] tracking-wide transition-all duration-300">
+            Josh
+            <span className="text-[#D4AF37]   bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent">
               Studios
             </span>
           </h1>
@@ -94,7 +94,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           {/* Elite WhatsApp CTA */}
           <Link
-            href="https://wa.me/YOUR_PHONE_NUMBER"
+            href="https://wa.me/918050412444"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:flex items-center space-x-2 bg-gradient-to-r from-purple-950/40 to-purple-900/40 border border-purple-500/20 text-[#FAF9F6] px-6 py-2.5 rounded-full hover:border-[#D4AF37]/50 transition-all duration-500 font-sans text-[14px] tracking-wide capitalize group shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]"
@@ -129,7 +129,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 15, scale: 0.97 }}
               transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-              className="  md:hidden absolute top-[calc(100%+16px)] right-0 w-[calc(100vw-2.5rem)] sm:w-[370px] bg-[#0B0712]/95 backdrop-blur-lg border border-purple-500/15 shadow-[0_40px_80px_rgba(0,0,0,0.9)] rounded-2xl sm:rounded-3xl overflow-hidden z-40"
+              className="  lg:hidden absolute top-[calc(100%+16px)] right-0 w-[calc(100vw-2.5rem)] sm:w-[370px] bg-[#0B0712]/95 backdrop-blur-lg border border-purple-500/15 shadow-[0_40px_80px_rgba(0,0,0,0.9)] rounded-2xl sm:rounded-3xl overflow-hidden z-40"
             >
               {/* Internal Dynamic Background Glow */}
               <div className="absolute -right-16 -top-16 w-36 h-36 bg-purple-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -183,7 +183,7 @@ export default function Navbar() {
                   className="mt-6 pt-4 border-t border-purple-500/10"
                 >
                   <Link
-                    href="https://wa.me/YOUR_PHONE_NUMBER"
+                   href="https://wa.me/918050412444"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-3 w-full bg-gradient-to-r from-purple-600 via-[#7C3AED] to-purple-700 text-[#FAF9F6] py-3.5 rounded-xl transition-all duration-300 font-sans text-[15px] tracking-wide capitalize font-medium shadow-[0_8px_30px_rgba(124,58,237,0.3)] border border-purple-400/20 active:scale-[0.99]"

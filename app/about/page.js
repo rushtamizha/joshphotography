@@ -55,17 +55,17 @@ export default function AboutPage() {
               
               <motion.h2 
                 variants={fadeInUp}
-                className="font-serif text-4xl md:text-5xl lg:text-6xl tracking-wide leading-[1.15]"
+                className=" text-4xl  tracking-wide leading-[1.15]"
               >
                 Crafting Visual Poetry From <br />
-                <span className="text-[#D4AF37] font-light italic bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent">
+                <span className="text-[#D4AF37]   bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent">
                   Pure Expressions of Love
                 </span>
               </motion.h2>
 
               <motion.p 
                 variants={fadeInUp}
-                className="font-sans text-[#FAF9F6]/70 text-base md:text-lg leading-relaxed pt-2 max-w-2xl"
+                className="font-sans text-[#FAF9F6] text-base md:text-lg leading-relaxed pt-2 max-w-2xl"
               >
                 Welcome to Josh Photography. We are a dedicated, artistic, and creative collective 
                 constantly pushing the boundaries of contemporary visual storytelling. To us, weddings 
@@ -75,7 +75,7 @@ export default function AboutPage() {
 
               <motion.p 
                 variants={fadeInUp}
-                className="font-sans text-[#FAF9F6]/70 text-base md:text-lg leading-relaxed max-w-2xl"
+                className="font-sans text-[#FAF9F6] text-base md:text-lg leading-relaxed max-w-2xl"
               >
                 We look far beyond the traditional frame. We don&apos;t just map timestamps or capture curated moments; 
                 we archive the spaces between heartbeats, the quiet glances, and the raw, unscripted emotional tales 
@@ -134,14 +134,14 @@ export default function AboutPage() {
                   <div className="w-10 h-10 rounded-xl bg-purple-950/40 border border-purple-500/10 flex items-center justify-center text-purple-300 group-hover:text-[#D4AF37] group-hover:border-[#D4AF37]/20 transition-colors duration-300 mb-6">
                     <Icon size={18} />
                   </div>
-                  <h3 className="font-serif text-3xl md:text-4xl text-[#FAF9F6] tracking-tight mb-2">
+                  <h3 className=" text-3xl md:text-4xl text-[#FAF9F6] tracking-tight mb-2">
                     {stat.metric}
                   </h3>
                   <div className="font-sans text-[14px] text-[#FAF9F6] font-medium tracking-wide mb-1">
                     {stat.label}
                   </div>
                 </div>
-                <p className="font-sans text-[13px] text-[#FAF9F6]/50 leading-relaxed mt-2">
+                <p className="font-sans text-[13px] text-[#FAF9F6] leading-relaxed mt-2">
                   {stat.desc}
                 </p>
               </motion.div>
@@ -167,7 +167,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="font-serif text-3xl md:text-4xl lg:text-5xl tracking-wide text-[#FAF9F6]"
+              className=" text-3xl  tracking-wide text-purple-500"
             >
               Master Crafters & Storytellers
             </motion.h2>
@@ -177,7 +177,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-sans text-[#FAF9F6]/70 text-base md:text-lg leading-relaxed"
+              className="font-sans text-[#FAF9F6] text-base md:text-lg leading-relaxed"
             >
               Josh Studios houses a highly specialized plethora of fine-art photographers, conceptual directors, 
               and cinematic innovators. Every collaborator within our collective is deeply committed to crafting 
@@ -195,16 +195,16 @@ export default function AboutPage() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-serif text-3xl md:text-4xl tracking-wide">
+          <h2 className=" text-3xl md:text-4xl tracking-wide">
             Let Us Tell Your <br />
-            <span className="italic font-light text-[#D4AF37]">Visual Masterpiece</span>
+            <span className="  text-[#D4AF37]">Visual Masterpiece</span>
           </h2>
-          <p className="font-sans text-[#FAF9F6]/60 text-sm md:text-base leading-relaxed">
+          <p className="font-sans text-[#FAF9F6] text-sm md:text-base leading-relaxed">
             Ready to immortalize your celebrations? Connect with our global planning team to outline bespoke imagery concepts engineered exclusively around your story.
           </p>
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="https://wa.me/YOUR_PHONE_NUMBER"
+               href="https://wa.me/918050412444"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-3 w-full sm:w-auto bg-gradient-to-r from-purple-600 via-[#7C3AED] to-purple-700 text-[#FAF9F6] px-8 py-4 rounded-full transition-all duration-300 font-sans text-[15px] tracking-wide capitalize font-medium shadow-[0_8px_30px_rgba(124,58,237,0.3)] border border-purple-400/20 hover:scale-[1.02] active:scale-[0.99]"

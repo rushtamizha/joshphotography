@@ -74,7 +74,7 @@ const itemVariants = {
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative bg-[#07040A] py-24 md:py-32 overflow-hidden border-b border-purple-500/5">
+    <section  className="relative bg-[#07040A] py-14 md:py-32 overflow-hidden border-b border-purple-500/5">
       
       {/* Background Atmosphere Lights */}
       <div className="absolute left-[-10%] top-1/3 w-[500px] h-[500px] bg-purple-600/5 rounded-full blur-[140px] pointer-events-none" />
@@ -87,9 +87,9 @@ export default function WhyChooseUs() {
           <p className="font-sans text-xs md:text-sm tracking-[0.2em] uppercase text-purple-400 font-medium mb-3">
             The Standard of Preservation
           </p>
-          <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#FAF9F6] tracking-wide leading-tight">
+          <h3 className=" text-3xl  text-[#FAF9F6] tracking-wide leading-tight">
             Why Families Choose <br />
-            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent font-light italic">
+            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent  ">
               Josh Photography
             </span>
           </h3>
@@ -115,7 +115,7 @@ export default function WhyChooseUs() {
                 <div>
                   {/* Top Meta Header Row */}
                   <div className="flex items-center justify-between w-full mb-6">
-                    <span className="font-serif text-sm text-[#D4AF37]/50 group-hover:text-[#D4AF37] transition-colors duration-400 tracking-widest">
+                    <span className=" text-sm text-[#D4AF37]/50 group-hover:text-[#D4AF37] transition-colors duration-400 tracking-widest">
                       {point.num}
                     </span>
                     <div className="p-2.5 bg-white/[0.01] border border-white/5 rounded-xl text-purple-300/40 group-hover:text-[#D4AF37] group-hover:border-[#D4AF37]/20 transition-all duration-400">
@@ -129,13 +129,13 @@ export default function WhyChooseUs() {
                   </h4>
 
                   {/* Detailed Description Block */}
-                  <p className="font-sans text-sm md:text-[15px] text-[#FAF9F6]/60 font-light leading-relaxed group-hover:text-[#FAF9F6]/75 transition-colors duration-300">
+                  <p className="font-sans text-sm md:text-[15px] text-[#FAF9F6]  leading-relaxed group-hover:text-white transition-colors duration-300">
                     {point.description}
                   </p>
                 </div>
 
                 {/* Bottom Card Base Line Decoration Accent */}
-                <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/0 to-transparent group-hover:via-purple-500/20 transition-all duration-700 mt-6" />
+                <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/0 to-transparent group-hover:via-purple-500 transition-all duration-700 mt-6" />
                 
               </motion.div>
             );

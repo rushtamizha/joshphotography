@@ -60,7 +60,7 @@ const itemVariants = {
 
 export default function ExperienceSection() {
   return (
-    <section className="relative bg-[#07040A] py-24 md:py-32 overflow-hidden border-b border-purple-500/5">
+    <section className="relative   bg-[#07040A] py-14 md:py-22 overflow-hidden border-b border-purple-500/5">
       
       {/* Background Atmosphere Lighting Elements */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-purple-600/5 rounded-full blur-[140px] pointer-events-none" />
@@ -71,17 +71,17 @@ export default function ExperienceSection() {
         <div className="text-center max-w-3xl mx-auto mb-20 md:mb-24">
           <div className="flex items-center space-x-2 bg-purple-950/40 border border-purple-500/10 rounded-full w-fit px-4 py-1.5 mb-4 mx-auto backdrop-blur-md">
             <Sparkles size={13} className="text-[#D4AF37]" />
-            <span className="font-sans text-xs md:text-sm tracking-wide text-purple-300/80 capitalize">
+            <span className="font-sans text-xs md:text-sm tracking-wide text-purple-300 capitalize">
               The Client Journey
             </span>
           </div>
-          <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#FAF9F6] tracking-wide leading-tight">
+          <h3 className=" text-3xl  text-[#FAF9F6] tracking-wide leading-tight">
             The{" "}
-            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent font-light italic">
+            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent  ">
               Josh Experience
             </span>
           </h3>
-          <p className="font-sans text-sm md:text-[16px] text-[#FAF9F6]/60 font-light mt-4 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-sans text-sm md:text-[16px] text-[#FAF9F6]   mt-4 leading-relaxed max-w-2xl mx-auto">
             From the very first conversation to the final album delivery, every experience with Josh Photography Studios is designed with elegance, absolute professionalism, and heartfelt care — creating family memories that feel timeless forever.
           </p>
         </div>
@@ -112,7 +112,7 @@ export default function ExperienceSection() {
                   </div>
                   
                   {/* Phase Marker Visible Only on Mobile to Maintain Rhythm */}
-                  <span className="font-serif text-xs tracking-widest text-[#D4AF37]/50 uppercase md:hidden">
+                  <span className=" text-xs tracking-widest text-[#D4AF37]/50 uppercase md:hidden">
                     {step.phase}
                   </span>
                 </div>
@@ -124,12 +124,12 @@ export default function ExperienceSection() {
                       {step.title}
                     </h4>
                     {/* Phase Marker Displayed on Desktop */}
-                    <span className="font-serif text-xs tracking-widest text-[#D4AF37]/40 group-hover:text-[#D4AF37]/70 transition-colors duration-400 uppercase hidden md:inline">
+                    <span className=" text-xs tracking-widest text-[#D4AF37]/40 group-hover:text-[#D4AF37]/70 transition-colors duration-400 uppercase hidden md:inline">
                       {step.phase}
                     </span>
                   </div>
                   
-                  <p className="font-sans text-sm md:text-[15px] text-[#FAF9F6]/60 font-light leading-relaxed group-hover:text-[#FAF9F6]/75 transition-colors duration-300">
+                  <p className="font-sans text-sm md:text-[15px] text-[#FAF9F6]/60  leading-relaxed group-hover:text-[#FAF9F6]/75 transition-colors duration-300">
                     {step.description}
                   </p>
                 </div>

@@ -5,7 +5,7 @@ import { Sparkles, Camera, Award } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="relative bg-[#07040A] py-24 md:py-32 overflow-hidden border-b border-purple-500/5">
+    <section id="about" className="relative bg-[#07040A] py-15 md:py-32 overflow-hidden border-b border-purple-500/5">
       
       {/* Ethereal Background Glow Behind the Owner's Portrait */}
       <div className="absolute right-0 top-1/4 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[120px] pointer-events-none z-0" />
@@ -25,7 +25,7 @@ export default function AboutSection() {
             className="flex items-center space-x-2 bg-purple-950/40 border border-purple-500/10 rounded-full px-4 py-1.5 backdrop-blur-md"
           >
             <Sparkles size={13} className="text-[#D4AF37]" />
-            <span className="font-sans text-xs md:text-sm tracking-wide text-purple-300/80 capitalize">
+            <span className="font-sans text-xs md:text-sm tracking-wide text-purple-300 capitalize">
               Our Philosophy
             </span>
           </motion.div>
@@ -36,16 +36,16 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#FAF9F6] tracking-wide leading-tight"
+            className=" text-3xl  text-[#FAF9F6] tracking-wide leading-tight"
           >
             A Legacy Built On Emotion, <br />
-            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent font-light italic">
+            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent  ">
               Tradition & Timeless Elegance
             </span>
           </motion.h3>
 
           {/* Core Body Paragraph Block */}
-          <div className="space-y-5 font-sans text-[16px] md:text-[17px] text-[#FAF9F6]/75 font-light leading-relaxed max-w-2xl">
+          <div className="space-y-5 font-sans text-[16px] md:text-[17px] text-[#FAF9F6]  leading-relaxed max-w-2xl">
             <motion.p
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -77,14 +77,14 @@ export default function AboutSection() {
               <Camera size={18} className="text-[#D4AF37] mt-1 shrink-0" strokeWidth={1.5} />
               <div>
                 <h5 className="font-sans text-[15px] font-medium text-[#FAF9F6]">Cinematic Vision</h5>
-                <p className="font-sans text-xs text-purple-300/40 font-light mt-0.5">Crafted like fine-art film</p>
+                <p className="font-sans text-xs text-purple-300  mt-0.5">Crafted like fine-art film</p>
               </div>
             </div>
             <div className="flex items-start space-x-3 text-left">
               <Award size={18} className="text-purple-400 mt-1 shrink-0" strokeWidth={1.5} />
               <div>
                 <h5 className="font-sans text-[15px] font-medium text-[#FAF9F6]">20+ Years Honor</h5>
-                <p className="font-sans text-xs text-purple-300/40 font-light mt-0.5">Trusted across generations</p>
+                <p className="font-sans text-xs text-purple-300  mt-0.5">Trusted across generations</p>
               </div>
             </div>
           </motion.div>
@@ -123,14 +123,14 @@ export default function AboutSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-center mt-6"
           >
-            <h4 className="font-serif text-lg md:text-xl text-[#FAF9F6] tracking-wide">
+            <h4 className=" text-lg md:text-xl text-[#FAF9F6] tracking-wide">
               Josh
             </h4>
-            <p className="font-sans text-xs md:text-sm text-[#D4AF37] tracking-wider font-light mt-1 capitalize">
+            <p className="font-sans text-xs md:text-sm text-[#D4AF37] tracking-wider  mt-1 capitalize">
               Founder & Master Storyteller
             </p>
             {/* Optional elegant digital script text signature styling rule */}
-            <p className="font-serif italic text-sm text-purple-400/30 mt-3 font-light select-none tracking-widest">
+            <p className="  text-sm text-purple-400 mt-3  select-none tracking-widest">
               Josh Studios
             </p>
           </motion.div>

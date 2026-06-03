@@ -44,7 +44,7 @@ const heroImages = [
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full bg-[#07040A] flex flex-col lg:flex-row items-center justify-center overflow-hidden pt-28 pb-12 lg:py-0">
+    <section id="home" className="relative min-h-screen w-full bg-[#07040A] flex flex-col lg:flex-row items-center justify-center overflow-hidden pt-28 pb-12 lg:py-0">
       
       {/* Premium Ambient Background Lighting */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-purple-600/10 rounded-full blur-[130px] pointer-events-none z-0" />
@@ -64,7 +64,7 @@ export default function Hero() {
             className="flex items-center space-x-2 bg-purple-950/40 border border-purple-500/10 rounded-full px-4 py-2 backdrop-blur-md"
           >
             <Sparkles size={14} className="text-[#D4AF37]" />
-            <span className="font-sans text-xs md:text-sm tracking-wide text-[#FAF9F6]/80 capitalize">
+            <span className="font-sans text-xs md:text-sm tracking-wide text-[#FAF9F6] capitalize">
               Preserving Timeless Cultural Weddings Since 2002
             </span>
           </motion.div>
@@ -74,10 +74,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#FAF9F6] tracking-wide leading-[1.15] md:leading-[1.1]"
+            className=" text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-[#FAF9F6] tracking-wide leading-[1.15] md:leading-[1.1]"
           >
             Luxury Wedding Storytelling <br />
-            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent font-light italic">
+            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent  ">
               Rooted In Emotion & Culture
             </span>
           </motion.h2>
@@ -87,7 +87,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-sans text-[15px] sm:text-[16px] md:text-[18px] text-[#FAF9F6]/75 max-w-xl leading-relaxed font-light"
+            className="font-sans text-[15px] sm:text-[16px] md:text-[18px] text-white max-w-xl leading-relaxed font-normal"
           >
             At Josh Photography Studios, we believe weddings are not simply celebrations — they are sacred family legacies woven with raw emotion, deep blessing, and timeless traditions.
           </motion.p>

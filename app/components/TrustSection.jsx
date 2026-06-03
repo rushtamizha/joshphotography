@@ -63,7 +63,7 @@ const cardVariants = {
 
 export default function TrustSection() {
   return (
-    <section className="relative bg-[#07040A] py-20 md:py-28 overflow-hidden border-b border-purple-500/5">
+    <section className="relative bg-[#07040A] md:py-10 overflow-hidden border-b border-purple-500/5">
       {/* Background Ambient Radial Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-purple-600/5 rounded-full blur-[140px] pointer-events-none z-0" />
 
@@ -74,9 +74,9 @@ export default function TrustSection() {
           <p className="font-sans text-xs md:text-sm tracking-[0.2em] uppercase text-purple-400 font-medium mb-3">
             A Legacy Built On Trust
           </p>
-          <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-[#FAF9F6] tracking-wide leading-tight">
+          <h3 className=" text-3xl  text-[#FAF9F6] tracking-wide leading-tight">
             Why High-Profile Families Choose <br />
-            <span className="bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent font-light italic">
+            <span className="bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent  ">
               Josh Photography
             </span>
           </h3>
@@ -108,7 +108,7 @@ export default function TrustSection() {
                 </div>
 
                 {/* Big Bold Counter Stat */}
-                <h4 className="font-serif text-4xl md:text-5xl text-[#FAF9F6] tracking-wide group-hover:text-[#FAF9F6] transition-colors duration-300 z-10 relative">
+                <h4 className=" text-4xl md:text-5xl text-[#FAF9F6] tracking-wide group-hover:text-[#FAF9F6] transition-colors duration-300 z-10 relative">
                   {stat.id === 4 ? (
                     <span className="bg-gradient-to-r from-[#D4AF37] to-[#FAF9F6] bg-clip-text text-transparent font-medium">
                       {stat.number}
@@ -124,7 +124,7 @@ export default function TrustSection() {
                 </p>
 
                 {/* Subtext Context */}
-                <p className="font-sans text-xs md:text-sm text-purple-300/40 group-hover:text-purple-300/60 transition-colors duration-300 font-light mt-1.5 z-10 relative">
+                <p className="font-sans text-xs md:text-sm text-purple-300  group-hover:text-purple-300/60 transition-colors duration-300  mt-1.5 z-10 relative">
                   {stat.subtext}
                 </p>
                 

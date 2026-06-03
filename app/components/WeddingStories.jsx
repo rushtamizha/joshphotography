@@ -59,7 +59,7 @@ const stories = [
 
 export default function WeddingStories() {
   return (
-    <section className="relative bg-[#07040A] py-24 md:py-32 overflow-hidden border-b border-purple-500/5">
+    <section className="relative bg-[#07040A] py-14 md:py-32 overflow-hidden border-b border-purple-500/5">
       
       {/* Background Ambient Violet Illumination */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-purple-600/5 rounded-full blur-[130px] pointer-events-none" />
@@ -98,17 +98,17 @@ export default function WeddingStories() {
           <div className="max-w-2xl text-left">
             <div className="flex items-center space-x-2 bg-purple-950/40 border border-purple-500/10 rounded-full w-fit px-4 py-1.5 mb-4 backdrop-blur-md">
               <Sparkles size={13} className="text-[#D4AF37]" />
-              <span className="font-sans text-xs md:text-sm tracking-wide text-purple-300/80 capitalize">
+              <span className="font-sans text-xs md:text-sm tracking-wide text-purple-300 capitalize">
                 Our Curated Portfolios
               </span>
             </div>
-            <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#FAF9F6] tracking-wide leading-tight">
+            <h3 className=" text-3xl  text-[#FAF9F6] tracking-wide leading-tight">
               Stories Filled With <br />
-              <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent font-light italic">
+              <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent  ">
                 Love, Tradition & Emotion
               </span>
             </h3>
-            <p className="font-sans text-sm md:text-[16px] text-[#FAF9F6]/60 font-light mt-4 leading-relaxed">
+            <p className="font-sans text-sm md:text-[16px] text-[#FAF9F6]  mt-4 leading-relaxed">
               Every wedding carries its own soul, emotions, and beautiful traditions. We preserve each fleeting moment with timeless elegance and deep, heartfelt storytelling.
             </p>
           </div>
@@ -172,7 +172,7 @@ export default function WeddingStories() {
                     <span className="font-sans text-xs md:text-sm text-[#D4AF37] tracking-wider capitalize mb-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75">
                       {story.category}
                     </span>
-                    <h4 className="font-serif text-lg md:text-xl lg:text-2xl text-[#FAF9F6] tracking-wide capitalize">
+                    <h4 className=" text-lg hidden text-[#FAF9F6] tracking-wide capitalize">
                       {story.title}
                     </h4>
                   </div>
