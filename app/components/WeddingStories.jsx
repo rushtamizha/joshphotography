@@ -14,51 +14,63 @@ import "swiper/css/pagination";
 
 const stories = [
 {
-    src: "/Hero/hero1.jpg", 
+    src: "/coresel/01.jpg", 
     alt: "Royal cultural wedding entrance and grand celebrations",
   },
   {
-    src: "/Hero/hero2.jpg", 
+    src: "/coresel/02.jpg", 
     alt: "Bright emotional candid couple moment",
   },
   {
-    src: "/Hero/hero3.jpg", 
+    src: "/coresel/03.jpg", 
     alt: "Vibrant traditional wedding sacred rituals",
   },
   {
-    src: "/Hero/hero4.jpg",
+    src: "/coresel/04.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero5.jpg",
+    src: "/coresel/05.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero6.jpg",
+    src: "/coresel/06.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero7.JPG",
+    src: "/coresel/07.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero8.JPG",
+    src: "/coresel/08.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero9.jpg",
+    src: "/coresel/09.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero10.jpg",
+    src: "/coresel/10.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero11.jpg",
+    src: "/coresel/11.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero12.jpg",
+    src: "/coresel/12.jpg",
+    alt: "Luxury editorial couple portrait",
+  },,
+  {
+    src: "/coresel/13.jpg",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/coresel/14.jpg",
+    alt: "Luxury editorial couple portrait",
+  },
+  {
+    src: "/coresel/15.jpg",
     alt: "Luxury editorial couple portrait",
   }
 ];

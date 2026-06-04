@@ -13,75 +13,68 @@ import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 // Premium bright, high-contrast cultural wedding imagery
 const heroImages = [
+  // {
+  //   src: "/hero/01.jpg",
+  //   alt: "Royal cultural wedding entrance and grand celebrations",
+  // },
   {
-    src: "/Hero/hero1.jpg", 
-    alt: "Royal cultural wedding entrance and grand celebrations",
-  },
-  {
-    src: "/Hero/hero2.jpg", 
+    src: "/hero/02.jpg",
     alt: "Bright emotional candid couple moment",
   },
   {
-    src: "/Hero/hero3.jpg", 
+    src: "/hero/03.jpg",
     alt: "Vibrant traditional wedding sacred rituals",
   },
   {
-    src: "/Hero/hero4.jpg",
+    src: "/hero/04.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero5.jpg",
+    src: "/hero/05.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero6.jpg",
+    src: "/hero/06.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero7.JPG",
+    src: "/hero/07.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero8.JPG",
+    src: "/hero/08.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero9.jpg",
+    src: "/hero/09.jpg",
     alt: "Luxury editorial couple portrait",
   },
   {
-    src: "/Hero/hero10.jpg",
+    src: "/hero/10.jpg",
     alt: "Luxury editorial couple portrait",
   },
-  {
-    src: "/Hero/hero11.jpg",
-    alt: "Luxury editorial couple portrait",
-  },
-  {
-    src: "/Hero/hero12.jpg",
-    alt: "Luxury editorial couple portrait",
-  }
 ];
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen w-full bg-[#07040A] flex flex-col lg:flex-row items-center justify-center overflow-hidden pt-28 pb-12 lg:py-0">
-      
+    <section
+      id="home"
+      className="relative min-h-screen w-full bg-[#07040A] flex flex-col lg:flex-row items-center justify-center overflow-hidden pt-28 pb-12 lg:py-0"
+    >
       {/* Premium Ambient Background Lighting */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-purple-600/10 rounded-full blur-[130px] pointer-events-none z-0" />
       <div className="absolute bottom-1/4 right-10 w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-amber-500/5 rounded-full blur-[100px] pointer-events-none z-0" />
 
       {/* Main Structural Wrapper */}
       <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-10 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-        
         {/* Left Column: Brand Typography & Action CTAs */}
         <div className="lg:col-span-7 flex flex-col space-y-6 text-center lg:text-left items-center lg:items-start order-2 lg:order-1">
-          
           {/* Tagline Ribbon */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -94,7 +87,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Master Title */}
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
@@ -107,17 +100,19 @@ export default function Hero() {
           </motion.h2>
 
           {/* Luxury Subtext Description */}
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="font-sans text-[15px] sm:text-[16px] md:text-[18px] text-white max-w-xl leading-relaxed font-normal"
           >
-            At Josh Photography Studios, we believe weddings are not simply celebrations — they are sacred family legacies woven with raw emotion, deep blessing, and timeless traditions.
+            At Josh Photography Studios, we believe weddings are not simply
+            celebrations — they are sacred family legacies woven with raw
+            emotion, deep blessing, and timeless traditions.
           </motion.p>
 
           {/* Premium Interactive Action Interface */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
@@ -128,9 +123,11 @@ export default function Hero() {
               className="group flex items-center justify-center space-x-2 bg-gradient-to-r from-purple-600 to-purple-800 text-[#FAF9F6] px-8 py-3.5 rounded-full font-sans text-[15px] tracking-wide capitalize font-medium transition-all duration-300 shadow-[0_10px_25px_rgba(124,58,237,0.25)] hover:shadow-[0_15px_30px_rgba(124,58,237,0.35)] w-full sm:w-auto active:scale-[0.98]"
             >
               <span>Explore Wedding Stories</span>
-              <ArrowRight size={16} className="transform group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                size={16}
+                className="transform group-hover:translate-x-1 transition-transform"
+              />
             </Link>
-
           </motion.div>
         </div>
 
@@ -145,14 +142,14 @@ export default function Hero() {
             {/* Custom Styling Overrides for Swiper Pagination Dots to match Purple/Gold branding */}
             <style jsx global>{`
               .swiper-pagination-bullet {
-                background: #FAF9F6 !important;
+                background: #faf9f6 !important;
                 opacity: 0.3;
                 width: 6px;
                 height: 6px;
                 transition: all 0.3s ease;
               }
               .swiper-pagination-bullet-active {
-                background: #D4AF37 !important;
+                background: #d4af37 !important;
                 opacity: 1 !important;
                 width: 20px;
                 border-radius: 4px;
@@ -178,18 +175,20 @@ export default function Hero() {
                 <SwiperSlide key={index} className="relative w-full h-full">
                   {/* Subtle luxury vignette gradient overlay to ground the images */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07040A]/40 via-transparent to-[#07040A]/20 z-10 pointer-events-none" />
-                  <img
+                  <Image
+                    fill
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover select-none"
-                    loading={index === 0 ? "eager" : "lazy"}
+                    className="object-cover select-none"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority={index === 0}
+                    loading={index === 0 ? undefined : "lazy"}
                   />
                 </SwiperSlide>
               ))}
             </Swiper>
           </motion.div>
         </div>
-
       </div>
     </section>
   );

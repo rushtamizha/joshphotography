@@ -14,7 +14,7 @@ export default function PortfolioPage() {
   // Filtering Logic
   const filteredStories = activeCategory === "All Stories"
     ? portfolioData
-    : portfolioData 
+    : portfolioData.filter(story => story.category === activeCategory); 
 
   return (
     <main className="min-h-screen bg-[#07030C] text-[#FAF9F6] pt-32 pb-24 relative overflow-x-hidden">
@@ -101,7 +101,7 @@ export default function PortfolioPage() {
                 className="group relative flex flex-col justify-between"
               >
                 {/* Visual Canvas Block */}
-                <div className="relative aspect-[4/5] w-full bg-[#0B0712] rounded-2xl overflow-hidden border border-purple-500/10 group-hover:border-purple-500/20 transition-colors duration-500 shadow-[0_20px_50px_rgba(0,0,0,0.4)]">
+                <div className="relative aspect-4/5 w-full bg-[#0B0712] rounded-2xl overflow-hidden border border-purple-500/10 group-hover:border-purple-500/20 transition-colors duration-500 shadow-[0_20px_50px_rgba(0,0,0,0.4)]">
                   {/* Subtle Dark Vignette Gradients */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07030C] via-transparent to-black/20 z-10 opacity-70 group-hover:opacity-80 transition-opacity duration-500" />
                   
@@ -110,7 +110,7 @@ export default function PortfolioPage() {
                     alt={`${story.couple}'s wedding photography profile`}
                     fill
                     sizes="(max-w-7xl) 33vw, 50vw"
-                    className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
+                    className="object-contain transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
                   />
 
                   {/* Micro Floating Category Tag */}

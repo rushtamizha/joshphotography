@@ -133,6 +133,23 @@ export default function TrustSection() {
           })}
         </motion.div>
 
+        {/* Responsive Image Showcase (from public/) */}
+        <motion.div
+          className="mt-10 flex justify-center"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <motion.div variants={cardVariants} className="w-full ">
+            <img
+              src={encodeURI('/center/New Post (1234) copy 2.jpg')}
+              alt="Trust showcase"
+              className="w-full h-100 rounded-2xl border border-purple-500/10 shadow-[0_10px_30px_rgba(0,0,0,0.5)] object-cover"
+            />
+          </motion.div>
+        </motion.div>
+
       </div>
     </section>
   );
