@@ -67,12 +67,12 @@ export default function Navbar() {
               className="object-contain "
             />
           </div>
-          <h1 className="  text-[12px]  md:text-2xl text-[#FAF9F6] tracking-wide transition-all duration-300 uppercase font-semibold">
+          <h1 className="  text-[10px] sm:text-[12px]   md:text-xl text-[#FAF9F6] tracking-wide transition-all duration-300 uppercase font-semibold">
             Josh Photography 
             <span className="text-[#D4AF37]   bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent uppercase">
                {" "}Studios
             </span>
-            <p className="text-white tracking-[0.1rem] md:tracking-[0.16rem] font-normal text-[8px] md:text-sm ">Documenting emotions in every frame
+            <p className="text-white tracking-[0.1rem] sm:text-[8px] md:tracking-[0.16rem] font-normal text-[6px] md:text-sm ">Documenting emotions in every frame
           </p>
           </h1>
         </Link>
