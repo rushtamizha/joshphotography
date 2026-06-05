@@ -67,7 +67,7 @@ export default function Navbar() {
               className="object-contain "
             />
           </div>
-          <h1 className="  text-sm  md:text-2xl text-[#FAF9F6] tracking-wide transition-all duration-300 uppercase font-semibold">
+          <h1 className="  text-[12px]  md:text-2xl text-[#FAF9F6] tracking-wide transition-all duration-300 uppercase font-semibold">
             Josh Photography 
             <span className="text-[#D4AF37]   bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent uppercase">
                {" "}Studios
