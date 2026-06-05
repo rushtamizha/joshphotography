@@ -84,7 +84,7 @@ export default function Footer() {
                 Josh Photography <span className="  text-[#D4AF37]">Studios</span>
               </h3>
               <p className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#D4AF37]/60 font-medium mt-1">
-                Luxury Cultural Wedding Photography & Films
+                Documenting emotions in every frame
               </p>
             </div>
             <p className="font-sans text-sm text-[#FAF9F6]  leading-relaxed max-w-sm">
@@ -94,7 +94,7 @@ export default function Footer() {
 
           {/* Quick Curated Navigation Directory */}
           <div className="md:col-span-3 flex flex-col space-y-4 text-left md:pl-8">
-            <h4 className="font-sans text-xs uppercase tracking-widest text-[#FAF9F6] font-medium">
+            <h4 className="font-sans text-xs uppercase tracking-widest text-[#FAF9F6] font-medium text-amber-300">
               Company
             </h4>
             <ul className="flex flex-col space-y-2.5 font-sans text-[14px]  text-[#FAF9F6]">
@@ -110,7 +110,7 @@ export default function Footer() {
 
           {/* Studio Contact Coordinates */}
           <div className="md:col-span-4 flex flex-col space-y-4 text-left">
-            <h4 className="font-sans text-xs uppercase tracking-widest text-[#FAF9F6] font-medium">
+            <h4 className="font-sans text-xs uppercase tracking-widest text-[#FAF9F6] font-medium text-amber-300">
               Studio Office
             </h4>
             <ul className="flex flex-col space-y-3.5 font-sans text-[14px]  text-[#FAF9F6]">
@@ -120,11 +120,12 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <FiPhone size={14} className="text-[#D4AF37] shrink-0" />
-                <a href="tel:+917338078008" className="hover:text-[#D4AF37] transition-colors duration-300">+917338078008</a>
+                <a href="tel:+917338078008" className="hover:text-[#D4AF37] transition-colors duration-300">  +917338078008 / +918050412444</a>
               </li>
+      
               <li className="flex items-start space-x-3">
                 <FiMapPin size={14} className="text-purple-400 shrink-0 mt-0.5" />
-                <span className="leading-relaxed">Andrahalli Main Rd, Herohalli, <br/> Sunkadakatte, Bengaluru,<br/> Karnataka, India.</span>
+                <a target="_blank" href="https://maps.app.goo.gl/UsdASwtNHmqTxXeP6?g_st=awb" className="leading-relaxed hover:text-amber-300">Andrahalli Main Rd, Herohalli, <br/> Sunkadakatte, Bengaluru,<br/> Karnataka, India.</a>
               </li>
             </ul>
           </div>

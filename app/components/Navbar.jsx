@@ -57,21 +57,23 @@ export default function Navbar() {
           href="/"
           className="z-50 flex items-center group cursor-pointer gap-4"
         >
-          <div className="relative w-15 h-15 transition-transform duration-300 ease-out group-hover:scale-[1.03] overflow-hidden rounded-lg">
+          <div className="relative w-15 h-15 transition-transform duration-300 ease-out group-hover:scale-[1.03] overflow-hidden  rounded-md">
             <Image
-              src="/logo.jpg"
-              alt="Josh Studios Logo"
+              src="/logo.png"
+              alt="Josh Photography Studios Logo"
               fill
               priority
               sizes="44px"
-              className="object-contain"
+              className="object-contain "
             />
           </div>
-          <h1 className="  text-xl md:text-2xl text-[#FAF9F6] tracking-wide transition-all duration-300">
-            Josh
-            <span className="text-[#D4AF37]   bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent">
-              Studios
+          <h1 className="  text-sm  md:text-2xl text-[#FAF9F6] tracking-wide transition-all duration-300 uppercase font-semibold">
+            Josh Photography 
+            <span className="text-[#D4AF37]   bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent uppercase">
+               {" "}Studios
             </span>
+            <p className="text-white tracking-[0.1rem] md:tracking-[0.16rem] font-normal text-[8px] md:text-sm ">Documenting emotions in every frame
+          </p>
           </h1>
         </Link>
 

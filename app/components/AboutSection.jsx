@@ -124,14 +124,14 @@ export default function AboutSection() {
             className="text-center mt-6"
           >
             <h4 className=" text-lg md:text-xl text-[#FAF9F6] tracking-wide">
-              Josh
+              Vijay Kanth
             </h4>
             <p className="font-sans text-xs md:text-sm text-[#D4AF37] tracking-wider  mt-1 capitalize">
               Founder & Master Storyteller
             </p>
             {/* Optional elegant digital script text signature styling rule */}
             <p className="  text-sm text-purple-400 mt-3  select-none tracking-widest">
-              Josh Studios
+              Josh Photography Studios
             </p>
           </motion.div>
         </div>

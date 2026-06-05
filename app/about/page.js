@@ -96,7 +96,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#07030C] via-transparent to-transparent z-10 opacity-60" />
                 <Image
                   src="/owner.png" /* Replace with an atmospheric portrait or behind-the-scenes masterwork */
-                  alt="The Artistic Vision of Josh Studios"
+                  alt="The Artistic Vision of Josh Photography Studios"
                   fill
                   priority
                   className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
@@ -179,7 +179,7 @@ export default function AboutPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="font-sans text-[#FAF9F6] text-base md:text-lg leading-relaxed"
             >
-              Josh Studios houses a highly specialized plethora of fine-art photographers, conceptual directors, 
+              Josh Photography Studios houses a highly specialized plethora of fine-art photographers, conceptual directors, 
               and cinematic innovators. Every collaborator within our collective is deeply committed to crafting 
               harmonious, heartfelt imagery that balances raw human passion with sophisticated composition. We don’t 
               just work with events—we invest entirely in families.
@@ -204,7 +204,7 @@ export default function AboutPage() {
           </p>
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-               href="https://wa.me/918050412444"
+               href="https://wa.me/917338078008"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-3 w-full sm:w-auto bg-gradient-to-r from-purple-600 via-[#7C3AED] to-purple-700 text-[#FAF9F6] px-8 py-4 rounded-full transition-all duration-300 font-sans text-[15px] tracking-wide capitalize font-medium shadow-[0_8px_30px_rgba(124,58,237,0.3)] border border-purple-400/20 hover:scale-[1.02] active:scale-[0.99]"
