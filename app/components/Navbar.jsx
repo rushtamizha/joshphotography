@@ -72,7 +72,7 @@ export default function Navbar() {
             <span className="text-[#D4AF37]   bg-gradient-to-r from-[#D4AF37] to-[#F3E5AB] bg-clip-text text-transparent uppercase">
                {" "}Studios
             </span>
-            <p className="text-white tracking-[0.1rem] sm:text-[8px] md:tracking-[0.16rem] font-normal text-[6px] md:text-sm ">Documenting emotions in every frame
+            <p className="text-white tracking-[0.1rem] sm:text-[8px] md:tracking-[0.16rem] font-normal text-[4px] md:text-sm ">Documenting emotions in every frame
           </p>
           </h1>
         </Link>
