@@ -78,7 +78,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center space-x-2 bg-purple-950/40 border border-purple-500/10 rounded-full px-4 py-2 backdrop-blur-md"
+            className="flex hidden items-center space-x-2 bg-purple-950/40 border border-purple-500/10 rounded-full px-4 py-2 backdrop-blur-md"
           >
             <Sparkles size={14} className="text-[#D4AF37]" />
             <span className="font-sans text-xs md:text-sm tracking-wide text-[#FAF9F6] capitalize">
@@ -108,7 +108,7 @@ export default function Hero() {
           >
             At Josh Photography Studios, we believe weddings are not simply
             celebrations — they are sacred family legacies woven with raw
-            emotion, deep blessing, and timeless traditions.
+            emotion, deep blessing, Preserving Timeless Cultural Weddings Since 2002.
           </motion.p>
 
           {/* Premium Interactive Action Interface */}

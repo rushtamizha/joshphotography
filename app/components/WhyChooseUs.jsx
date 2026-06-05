@@ -87,9 +87,9 @@ export default function WhyChooseUs() {
           <p className="font-sans text-xs md:text-sm tracking-[0.2em] uppercase text-purple-400 font-medium mb-3">
             The Standard of Preservation
           </p>
-          <h3 className=" text-3xl  text-[#FAF9F6] tracking-wide leading-tight">
-            Why Families Choose <br />
-            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent  ">
+          <h3 className=" text-3xl  text-[#FAF9F6] tracking-wide font-semibold leading-tight">
+            Why Families & Couples Choose <br />
+            <span className="bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] bg-clip-text text-transparent uppercase tracking-widest">
               Josh Photography
             </span>
           </h3>

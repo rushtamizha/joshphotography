@@ -120,7 +120,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <FiPhone size={14} className="text-[#D4AF37] shrink-0" />
-                <a href="tel:+918050412444" className="hover:text-[#D4AF37] transition-colors duration-300">+918050412444</a>
+                <a href="tel:+917338078008" className="hover:text-[#D4AF37] transition-colors duration-300">+917338078008</a>
               </li>
               <li className="flex items-start space-x-3">
                 <FiMapPin size={14} className="text-purple-400 shrink-0 mt-0.5" />

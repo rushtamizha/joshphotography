@@ -13,7 +13,7 @@ export default function ContactPage() {
   const [pack, setPack] = useState("");
   const [details, setDetails] = useState("");
 
-  const phone = "+918050412444";
+  const phone = "+917338078008";
 
   const handleSubmit = (e) => {
     e.preventDefault();

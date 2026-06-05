@@ -1,19 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, ArrowLeft, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowLeft, ArrowRight, Instagram } from "lucide-react";
+
 
 // Import Swiper React components and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { BsInstagram } from "react-icons/bs";
+import Image from "next/image";
 
 const stories = [
-{
+  {
     src: "/coresel/01.jpg", 
     alt: "Royal cultural wedding entrance and grand celebrations",
   },
@@ -60,7 +64,7 @@ const stories = [
   {
     src: "/coresel/12.jpg",
     alt: "Luxury editorial couple portrait",
-  },,
+  },
   {
     src: "/coresel/13.jpg",
     alt: "Luxury editorial couple portrait",
@@ -68,12 +72,9 @@ const stories = [
   {
     src: "/coresel/14.jpg",
     alt: "Luxury editorial couple portrait",
-  },
-  {
-    src: "/coresel/15.jpg",
-    alt: "Luxury editorial couple portrait",
   }
 ];
+
 
 export default function WeddingStories() {
   return (
@@ -82,6 +83,7 @@ export default function WeddingStories() {
       {/* Background Ambient Violet Illumination */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-purple-600/5 rounded-full blur-[130px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-amber-500/5 rounded-full blur-[110px] pointer-events-none" />
+
 
       {/* Custom Styles for Luxury Swiper Pagination & Center Focus */}
       <style jsx global>{`
@@ -110,6 +112,7 @@ export default function WeddingStories() {
         }
       `}</style>
 
+
       <div className="relative w-full">
         {/* Section Header Text Container */}
         <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-12 flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
@@ -131,6 +134,7 @@ export default function WeddingStories() {
             </p>
           </div>
 
+
           {/* Luxury Custom Navigation Buttons (Desktop Only) */}
           <div className="hidden md:flex items-center space-x-4 mb-2">
             <button className="swiper-prev-btn p-4 rounded-full border border-purple-500/15 bg-[#0B0712]/40 text-[#FAF9F6]/60 hover:text-[#D4AF37] hover:border-[#D4AF37]/30 transition-all duration-300 focus:outline-none">
@@ -141,6 +145,7 @@ export default function WeddingStories() {
             </button>
           </div>
         </div>
+
 
         {/* Full-width Symmetrical Swiper Component Layout */}
         <div className="w-full px-4 md:px-0">
@@ -170,20 +175,21 @@ export default function WeddingStories() {
               1440: { slidesPerView: 3.5, spaceBetween: 40 }
             }}
           >
-            {stories.map((story) => (
-              <SwiperSlide key={story.id}>
+            {stories.map((story, index) => (
+              <SwiperSlide key={index}>
                 <div className="relative w-full aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] rounded-2xl md:rounded-3xl overflow-hidden border border-purple-500/10 shadow-[0_20px_50px_rgba(0,0,0,0.7)] group">
                   
                   {/* Subtle Gradient Veil for Text Readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07040A] via-[#07040A]/10 to-transparent opacity-80 z-10 pointer-events-none group-hover:opacity-90 transition-opacity duration-500" />
                   
                   {/* Bright, Vibrant High-End Event Image */}
-                  <img
+                  <img width={100} height={100}
                     src={story.src}
                     alt={story.alt}
                     className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105 select-none"
                     loading="lazy"
                   />
+
 
                   {/* Absolute Positioned Content Metadata Overlay */}
                   <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 z-20 flex flex-col transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
@@ -200,8 +206,22 @@ export default function WeddingStories() {
           </Swiper>
         </div>
 
+
         {/* Dynamic Pagination Bullets Wrapper */}
         <div className="stories-pagination flex justify-center items-center mt-12 z-20 relative" />
+        
+        {/* Premium Instagram Link Button */}
+        <div className="flex justify-center mt-8">
+          <a
+            href="https://instagram.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-[#D4AF37] via-[#F3E5AB] to-[#D4AF37] rounded-full text-[#07040A] font-sans font-semibold text-sm md:text-base tracking-wide hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] focus:ring-offset-2 focus:ring-offset-[#07040A]"
+          >
+            <BsInstagram size={18}  />
+            <span>View Instagram</span>
+          </a>
+        </div>
         
       </div>
     </section>

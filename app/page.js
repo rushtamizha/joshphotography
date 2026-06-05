@@ -12,9 +12,9 @@ const page = () => {
     <div>
       <Hero/>
       <TrustSection/>
+      <WeddingStories/>
       <AboutSection/>
       <WhyChooseUs/>
-      <WeddingStories/>
       <ExperienceSection/>
       <Testimonials/>
     </div>

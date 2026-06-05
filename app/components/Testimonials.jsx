@@ -11,37 +11,8 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { testimonials } from "@/data";
 
-const testimonials = [
-  {
-    id: 1,
-    quote: "Josh Photography Studios beautifully captured every emotion of our wedding day. Every photograph feels timeless, elegant, and deeply meaningful to our family.",
-    author: "Aanya & Rahul Sharma",
-    date: "2 weeks ago",
-    location: "The Oberoi Udaivilas",
-  },
-  {
-    id: 2,
-    quote: "The absolute respect they showed for our traditional sacred rituals was breathtaking. They didn't just take pictures—they documented our family heritage with absolute poise.",
-    author: "Meera & Vikram Patel",
-    date: "1 month ago",
-    location: "Umaid Bhawan Palace",
-  },
-  {
-    id: 3,
-    quote: "We are completely blown away by our cinematic film. The attention to sound design, real-time family voiceovers, and premium lighting feels like an actual high-end legacy film.",
-    author: "Priya & Anand Kapoor",
-    date: "2 months ago",
-    location: "Suryagarh Jaisalmer",
-  },
-  {
-    id: 4,
-    quote: "Their team brought such a calm, professional presence to an otherwise chaotic day. They allowed us to completely live in the moment while capturing every ounce of raw emotion.",
-    author: "Dia & Rohan Malhotra",
-    date: "3 months ago",
-    location: "Taj Lake Palace",
-  },
-];
 
 export default function GoogleTestimonials() {
   return (
@@ -135,8 +106,8 @@ export default function GoogleTestimonials() {
               1440: { slidesPerView: 2.8, spaceBetween: 40 }
             }}
           >
-            {testimonials.map((item) => (
-              <SwiperSlide key={item.id}>
+            {testimonials.map((item,idx) => (
+              <SwiperSlide key={idx}>
                 <div className="relative w-full bg-[#0B0712]/50 backdrop-blur-md border border-purple-500/10 rounded-2xl md:rounded-3xl p-8 md:p-10 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.6)] min-h-[320px] md:min-h-[340px] group transition-all duration-300 hover:border-purple-500/20">
                   
                   {/* Top Block: Google Icon Blueprint & Star Metrics */}
@@ -171,7 +142,7 @@ export default function GoogleTestimonials() {
 
                     {/* Core Quote Body Copy */}
                     <p className="font-sans text-[15px] md:text-[17px] text-[#FAF9F6]   leading-relaxed tracking-wide mb-8">
-                      “{item.quote}”
+                      “{item.description}”
                     </p>
                   </div>
 
@@ -179,7 +150,7 @@ export default function GoogleTestimonials() {
                   <div className="flex items-center justify-between pt-5 border-t border-purple-500/10 w-full">
                     <div className="flex flex-col space-y-0.5">
                       <span className="font-sans text-[15px] font-medium text-[#FAF9F6] tracking-wide">
-                        {item.author}
+                        {item.name}
                       </span>
                       <span className="font-sans text-xs text-[#D4AF37]/60 group-hover:text-[#D4AF37]/80 transition-colors duration-400  tracking-wide capitalize">
                         {item.location}

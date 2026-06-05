@@ -59,12 +59,12 @@ export default function Navbar() {
         >
           <div className="relative w-15 h-15 transition-transform duration-300 ease-out group-hover:scale-[1.03] overflow-hidden rounded-lg">
             <Image
-              src="/logo.webp"
+              src="/logo.jpg"
               alt="Josh Studios Logo"
               fill
               priority
               sizes="44px"
-              className="object-cover"
+              className="object-contain"
             />
           </div>
           <h1 className="  text-xl md:text-2xl text-[#FAF9F6] tracking-wide transition-all duration-300">
