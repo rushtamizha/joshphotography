@@ -144,13 +144,10 @@ export default function Footer() {
           {/* Symmetrical High-End Social Directory Handles & Return Action */}
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="p-2 text-[#FAF9F6]/40 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Instagram Account">
+              <a href="https://www.instagram.com/joshphotography_studios?igsh=NHBneXRkZXk1dGQ3" target="_blank" rel="noreferrer" className="p-2 text-[#FAF9F6]/40 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Instagram Account">
                 <FiInstagram size={16} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="p-2 text-[#FAF9F6]/40 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Youtube Channel">
-                <FiYoutube size={16} />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="p-2 text-[#FAF9F6]/40 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Facebook Page">
+              <a href="https://www.facebook.com/share/16rDJmTVuq/" target="_blank" rel="noreferrer" className="p-2 text-[#FAF9F6]/40 hover:text-[#D4AF37] transition-colors duration-300" aria-label="Facebook Page">
                 <FaFacebookF size={14} />
               </a>
             </div>
